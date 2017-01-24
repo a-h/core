@@ -6,6 +6,7 @@ namespace Library
     {
         public void LibraryMethod()
         {    
+            Console.WriteLine("Library is working.");
         }
     }
 }
