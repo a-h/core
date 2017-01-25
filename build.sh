@@ -10,5 +10,6 @@ dotnet restore
 # Build
 dotnet build **/project.json
 
-# Publish
+# Publish Web
+cd $wd/Web/
 dotnet publish -c Release -o ./bin/
