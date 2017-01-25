@@ -11,4 +11,4 @@ dotnet restore
 dotnet build **/project.json
 
 # Publish
-dotnet publish -c Release -o ./bin/Release/PublishOutput
+dotnet publish -c Release -o ./bin/

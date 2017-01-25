@@ -1,5 +1,5 @@
 FROM microsoft/aspnetcore
 WORKDIR /app
-COPY Web .
+COPY . .
 EXPOSE 80
 ENTRYPOINT ["dotnet", "bin/Web.dll"]

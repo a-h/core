@@ -6,7 +6,7 @@
 # DEBUG
 
 # Build the current directory and push it to ./bin/Release/PublishOutput
-docker run -it -v `pwd`:/sln --workdir /sln microsoft/aspnetcore-build bash -c "build.sh"
+docker run -it -v `pwd`:/sln --workdir /sln microsoft/aspnetcore-build sh build.sh
 
 # Run the container with the output mounted.
-docker run -it -p 8080:80 -v `pwd`/Web/bin/Release/PublishOutput:/app/bin:ro -v `pwd`/Web:/app:ro --workdir /app microsoft/aspnetcore bash -c "dotnet bin/Web.dll"
+docker run -it -p 8080:80 -v `pwd`/Web:/app:ro --workdir /app microsoft/aspnetcore bash -c "dotnet bin/Web.dll"
